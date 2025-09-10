@@ -1,0 +1,28 @@
+🚂 RAILWAY.APP ADIM ADIM
+
+1. https://railway.app → Sign Up (GitHub ile)
+
+2. "New Project" → "Deploy from GitHub repo"
+
+3. Repository seç: "esyonelai/dokuman-veri-cikarici"
+
+4. Environment Variables ekle:
+   - Sol menüde "Variables" VEYA
+   - "Settings" > "Environment" VEYA  
+   - Ana sayfada "Environment" tab'ı
+   
+   Key: GEMINI_API_KEY
+   Value: AIzaSyC4tmg3Z09rYF2oVeCEGa0Ivqxdy7WRymc
+
+5. "Deploy" (otomatik başlayabilir)
+
+6. Build bekle (3-5 dakika)
+
+7. "Settings" > "Domains" > "Generate Domain"
+
+8. URL'yi test et!
+
+SORUN ÇÖZÜM:
+- Environment Variables bulamıyorsanız: "Settings" menüsüne bakın
+- Deploy butonu yoksa: Otomatik başlamış olabilir
+- Build hatası: Logs'u kontrol edin
