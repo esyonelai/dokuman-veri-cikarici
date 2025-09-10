@@ -1,0 +1,5 @@
+{
+  "name": "Yapay Zeka Destekli Doküman Veri Çıkarıcı",
+  "description": "Taranmış belgelerden (fatura, form vb.) yapay zeka ile otomatik olarak veri çıkaran ve Excel'e aktarmanızı sağlayan akıllı bir web uygulaması.",
+  "requestFramePermissions": []
+}

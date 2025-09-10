@@ -1,0 +1,19 @@
+# Railway için optimize edilmiş Dockerfile
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Package dosyalarını kopyala
+COPY package*.json ./
+
+# Bağımlılıkları yükle
+RUN npm ci --only=production
+
+# Uygulama kodunu kopyala
+COPY . .
+
+# Port
+EXPOSE $PORT
+
+# Railway için host ve port ayarları
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "$PORT"]
