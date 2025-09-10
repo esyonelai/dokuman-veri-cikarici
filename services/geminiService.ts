@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { ExtractedData } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || process.env.API_KEY! });
 
 const fileToBase64 = async (file: File): Promise<{ mimeType: string, base64: string }> => {
   const base64 = await new Promise<string>((resolve, reject) => {
