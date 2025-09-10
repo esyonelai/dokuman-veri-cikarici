@@ -1,8 +1,9 @@
 services:
   - type: web
     name: dokuman-veri-cikarici
-    env: docker
-    dockerfilePath: ./Dockerfile
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npx serve -s dist -l $PORT
     envVars:
       - key: GEMINI_API_KEY
         sync: false

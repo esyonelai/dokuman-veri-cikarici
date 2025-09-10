@@ -10,7 +10,8 @@
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0 --port $PORT",
-    "start": "vite --host 0.0.0.0 --port ${PORT:-5173}"
+    "start": "npx serve -s dist -l $PORT",
+    "render-build": "npm run build"
   },
   "dependencies": {
     "react": "^19.1.1",
